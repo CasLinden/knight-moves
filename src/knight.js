@@ -9,6 +9,23 @@ export function knight(coords) {
   draggableKnight(knight);
   targetsClickable()
 }
+knight("4-5");
+
+export function currentPosition() {
+  let knight = document.querySelector('.knight')
+  let position = knight.parentElement
+  let x = +position.getAttribute('data-x')
+  let y = +position.getAttribute('data-y')
+  return [x, y]
+}
+
+export function currentTarget() {
+  let flagpole = document.querySelector('.flagpole')
+  let position = flagpole.parentElement
+  let x = +position.getAttribute("data-x");
+  let y = +position.getAttribute("data-y");
+  return [x, y];
+}
 
 function emptySquares() {
   return Array.from(document.querySelectorAll(".square:not(:has(img))"));
@@ -66,4 +83,3 @@ function flagpoleImg() {
   img.setAttribute("draggable", "false")
   return img
 }
-knight("4-5");
