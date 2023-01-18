@@ -5,7 +5,18 @@ import { Node } from './node';
 import { knightPath } from './knightpath';
 
 
+function execute() {
+  let btn = document.getElementById('traverse-button')
+  if (ready(btn)) {
+    
+  }
+}
 
+
+function ready(btn) {
+  if (btn.classList.contains('set')) return true
+  return false
+}
 
 
 

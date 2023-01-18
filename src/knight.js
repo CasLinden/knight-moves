@@ -37,6 +37,7 @@ function draggableKnight(img) {
 
 function startDragging() {
   document.body.style.cursor = "grabbing";
+  document.getElementById('knightcheck').classList.remove('checked')
   let otherSquares = emptySquares();
   otherSquares.forEach((square) =>
     square.addEventListener("mouseup", dropKnight)
@@ -45,6 +46,7 @@ function startDragging() {
 
 function dropKnight() {
   document.querySelector(".knight").remove();
+  document.getElementById("knightcheck").classList.add("checked");
   let coords = this.getAttribute("data-coords");
   knight(coords);
   document.body.style.cursor = "pointer";
@@ -66,6 +68,8 @@ function setTargetSquare() {
   if(oldFlag) oldFlag.remove()
   let flag = flagpoleImg();
   this.appendChild(flag);
+  document.getElementById("flagcheck").classList.add("checked");
+  boardSet();
 }
 
 function knightImg() {
@@ -83,3 +87,12 @@ function flagpoleImg() {
   img.setAttribute("draggable", "false")
   return img
 }
+
+function boardSet() {
+  if (document.querySelector('.knight') && document.querySelector('.flagpole')) {
+  document.getElementById("traverse-button").classList.add('set');
+  } else {
+    document.getElementById("traverse-button").classList.remove("set");
+  }
+}
+

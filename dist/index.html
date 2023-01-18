@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>knight moves</title>
-<script defer src="bundle70e58c9bf30ef8335bfa.js"></script></head>
+<script defer src="bundle316bd3626aebd74c4350.js"></script></head>
 <body>
     <div id="page-wrapper">
         <div id="board-wrapper">
@@ -32,9 +32,19 @@
             </div>
         </div>
         <div id="side-panel">
-          <p>instructions:</p>
-          <p>Drag the knight to move it to a new starting square</p>
-          <p>click to set a target square</p>
+          <div class="centerer">
+              <h1>Knight Moves</h1>
+          </div>
+          <div class="condition">
+              <p>Drag the knight to move it to a new starting square</p>
+              <div class="checkbox checked" id="knightcheck"></div>
+          </div>
+          <div class="condition">
+              <p>Click to set a target square</p>
+              <div class="checkbox" id="flagcheck"></div>
+          </div>
+          <div class="centerer"><button id="traverse-button">Traverse the board!</button></div>
+          <div class="output"></div>
         </div>
     </div>
 </body>

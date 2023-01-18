@@ -32,9 +32,19 @@
             </div>
         </div>
         <div id="side-panel">
-          <p>instructions:</p>
-          <p>Drag the knight to move it to a new starting square</p>
-          <p>click to set a target square</p>
+          <div class="centerer">
+              <h1>Knight Moves</h1>
+          </div>
+          <div class="condition">
+              <p>Drag the knight to move it to a new starting square</p>
+              <div class="checkbox checked" id="knightcheck"></div>
+          </div>
+          <div class="condition">
+              <p>Click to set a target square</p>
+              <div class="checkbox" id="flagcheck"></div>
+          </div>
+          <div class="centerer"><button id="traverse-button">Traverse the board!</button></div>
+          <div class="output"></div>
         </div>
     </div>
 </body>
