@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #38332b;
+$secondary-color: #f4f4f4;
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: $secondary-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page-wrapper{
+  display: flex;
+  gap: 1rem;
+}
+
+#board-wrapper{
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-areas: 
+  "leftofboard board"
+  ". bottomofboard";
+
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 10fr 1fr;
+}
+
+#leftofboard {
+  display: grid;
+  grid-area: leftofboard;
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+#bottomofboard {
+  display: grid;
+  grid-area: bottomofboard;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.rownumber,
+.columnletter{
+  font-size: 1.3rem;
+  color: $primary-color;
+}
+
+#board-container{
+  display: grid;
+  grid-area: board;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 1px solid $primary-color;
+}
+
+.square{
+  border: 1px solid $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square.colored{
+  background-color: $primary-color;
+}
+
+.knight{
+  object-fit: contain;
+  width: 100%;
+}
+
+#side-panel{
+  display: flex;
+  flex-direction: column;
+}
