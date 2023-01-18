@@ -42,5 +42,3 @@ export function knightPath(root, target) {
   }
 }
 
-console.log(knightPath(start, finish));
-
