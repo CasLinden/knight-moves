@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n}\n\n#board-wrapper {\n  height: 1000px;\n  width: 1000px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n}\n\n.square.colored {\n  background-color: #38332b;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACI,yBARc;EASd,iCAAA;AAJJ;;AAOA;EACE,cAAA;EACA,aAAA;EACA,aAAA;EACA,0DACA;EAGA,+BAAA;EACA,4BAAA;AAPF;;AAUA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAPF;;AAUA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAPF;;AAUA;;EAEE,iBAAA;EACA,cA5Cc;AAqChB;;AAUA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAPF;;AAUA;EACE,yBAAA;AAPF;;AAUA;EACE,yBA5Dc;AAqDhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n    background-color: $secondary-color;\n    font-family: 'Roboto', sans-serif;\n}\n\n#board-wrapper{\n  height: 1000px;\n  width: 1000px;\n  display: grid;\n  grid-template-areas: \n  \"leftofboard board\"\n  \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter{\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container{\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square{\n  border: 1px solid $primary-color;\n}\n\n.square.colored{\n  background-color: $primary-color;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n}\n\n#page-wrapper {\n  display: flex;\n  gap: 1rem;\n}\n\n#board-wrapper {\n  height: 600px;\n  width: 600px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: #38332b;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel {\n  display: flex;\n  flex-direction: column;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACI,yBARc;EASd,iCAAA;AAJJ;;AAOA;EACE,aAAA;EACA,SAAA;AAJF;;AAOA;EACE,aAAA;EACA,YAAA;EACA,aAAA;EACA,0DACA;EAGA,+BAAA;EACA,4BAAA;AAPF;;AAUA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAPF;;AAUA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAPF;;AAUA;;EAEE,iBAAA;EACA,cAjDc;AA0ChB;;AAUA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAPF;;AAUA;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AAPF;;AAUA;EACE,yBApEc;AA6DhB;;AAUA;EACE,mBAAA;EACA,WAAA;AAPF;;AAUA;EACE,aAAA;EACA,sBAAA;AAPF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n    background-color: $secondary-color;\n    font-family: 'Roboto', sans-serif;\n}\n\n#page-wrapper{\n  display: flex;\n  gap: 1rem;\n}\n\n#board-wrapper{\n  height: 600px;\n  width: 600px;\n  display: grid;\n  grid-template-areas: \n  \"leftofboard board\"\n  \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter{\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container{\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square{\n  border: 1px solid $primary-color;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored{\n  background-color: $primary-color;\n}\n\n.knight{\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel{\n  display: flex;\n  flex-direction: column;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -526,8 +526,8 @@ function board() {
     let board = document.getElementById("board-container");
     for (let i = 1; i < 65; i++) {
       let square = document.createElement("div");
-      // square.setAttribute("data-x", `${_xCoord(i)}`);
-      // square.setAttribute("data-y", `${_yCoord(i)}`);
+      square.setAttribute("data-x", `${_xCoord(i)}`);
+      square.setAttribute("data-y", `${_yCoord(i)}`);
       square.setAttribute("data-coords", `${_xCoord(i)}-${_yCoord(i)}`)
       square.classList.add('square')
       //color tiles:
@@ -560,6 +560,7 @@ function board() {
   }
 }
 
+board();
 
 /***/ }),
 
@@ -571,22 +572,267 @@ function board() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "currentPosition": () => (/* binding */ currentPosition),
+/* harmony export */   "currentTarget": () => (/* binding */ currentTarget),
 /* harmony export */   "knight": () => (/* binding */ knight)
 /* harmony export */ });
 /* harmony import */ var _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/knight.svg */ "./src/assets/knight.svg");
+/* harmony import */ var _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/flagpole.svg */ "./src/assets/flagpole.svg");
 
 
-function knight() {
-  const svg  = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttributeNS("http://www.w3.org/1999/xlink", "href", _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__);
-  let target = document.querySelector('[data-coords="4-5"]');
-  console.log(target)
-  console.log(svg)
-  target.appendChild(svg)
-  
+
+//place the knight on the board, make it draggable and allow target square selection
+function knight(coords) {
+  let target = document.querySelector(`[data-coords="${coords}"]`);
+  let knight = knightImg()
+  target.appendChild(knight);
+  draggableKnight(knight);
+  targetsClickable()
+}
+knight("4-5");
+
+function currentPosition() {
+  let knight = document.querySelector('.knight')
+  let position = knight.parentElement
+  let x = +position.getAttribute('data-x')
+  let y = +position.getAttribute('data-y')
+  return [x, y]
 }
 
-console.log(_assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__)
+function currentTarget() {
+  let flagpole = document.querySelector('.flagpole')
+  let position = flagpole.parentElement
+  let x = +position.getAttribute("data-x");
+  let y = +position.getAttribute("data-y");
+  return [x, y];
+}
+
+function emptySquares() {
+  return Array.from(document.querySelectorAll(".square:not(:has(img))"));
+}
+
+function draggableKnight(img) {
+  img.addEventListener("mousedown", startDragging, { once: true });
+}
+
+function startDragging() {
+  document.body.style.cursor = "grabbing";
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) =>
+    square.addEventListener("mouseup", dropKnight)
+  );
+}
+
+function dropKnight() {
+  document.querySelector(".knight").remove();
+  let coords = this.getAttribute("data-coords");
+  knight(coords);
+  document.body.style.cursor = "pointer";
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) => {
+    square.removeEventListener("mouseup", dropKnight);
+  });
+}
+
+function targetsClickable() {
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) => {
+    square.addEventListener("click", setTargetSquare);
+  });
+}
+
+function setTargetSquare() {
+  let oldFlag = document.querySelector('.flagpole')
+  if(oldFlag) oldFlag.remove()
+  let flag = flagpoleImg();
+  this.appendChild(flag);
+}
+
+function knightImg() {
+  let img = document.createElement("img");
+  img.src = _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__;
+  img.classList.add("knight");
+  img.setAttribute("draggable", "false");
+  return img;
+}
+
+function flagpoleImg() {
+  let img = document.createElement("img")
+  img.src = _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__
+  img.classList.add("flagpole")
+  img.setAttribute("draggable", "false")
+  return img
+}
+
+
+/***/ }),
+
+/***/ "./src/knightpath.js":
+/*!***************************!*\
+  !*** ./src/knightpath.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "knightPath": () => (/* binding */ knightPath)
+/* harmony export */ });
+/* harmony import */ var _node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node */ "./src/node.js");
+/* harmony import */ var _knight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./knight */ "./src/knight.js");
+
+
+
+let start = (0,_node__WEBPACK_IMPORTED_MODULE_0__.Node)([4, 5]);
+let finish = [8, 6];
+
+function knightPath(root, target) {
+  let queue = [root];
+  enqueueMovesOf(root);
+
+  function enqueueMovesOf(root) {
+    let moves = root.moves;
+    let movesNodes = moves.map((move) => (0,_node__WEBPACK_IMPORTED_MODULE_0__.Node)(move));
+    movesNodes.forEach((node) => {
+      node.prev = root;
+      queue.push(node);
+    });
+  }
+
+  while (queue.length > 0) {
+    let first = queue.shift();
+    if (isTarget(first)) {
+      return path(first);
+    }
+    enqueueMovesOf(first);
+  }
+
+  function isTarget(move) {
+    if (move.x === target[0] && move.y === target[1]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function path(node, pathCoords = []) {
+    pathCoords.push(node.coords);
+    if (!node.prev) {
+      return pathCoords.reverse();
+    }
+    return path(node.prev, pathCoords);
+  }
+}
+
+console.log(knightPath(start, finish));
+
+
+
+/***/ }),
+
+/***/ "./src/moves.js":
+/*!**********************!*\
+  !*** ./src/moves.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "movesFrom": () => (/* binding */ movesFrom)
+/* harmony export */ });
+function movesFrom(x, y) {
+  let movesArray = []
+  movesArray = movesArray.concat(moveNorth(x, y))
+  movesArray = movesArray.concat(moveEast(x, y))
+  movesArray = movesArray.concat(moveSouth(x, y))
+  movesArray = movesArray.concat(moveWest(x, y))
+  return movesArray.filter(value => value !== undefined)
+}
+
+function moveNorth(x, y) {
+  if (y + 2 > 8) return;
+  let mv = [];
+  if (!(x - 1 < 1)) {
+    mv.push([x - 1, y + 2]);
+  }
+  if (!(x + 1 > 8)) {
+    mv.push([x + 1, y + 2]);
+  }
+  return mv;
+}
+
+function moveEast(x, y) {
+  if (x + 2 > 8) return;
+  let mv = [];
+  if (!(y + 1 > 8)) {
+    mv.push([x + 2, y + 1]);
+  }
+  if (!(y - 1 < 1)) {
+    mv.push([x + 2, y - 1]);
+  }
+  return mv;
+}
+
+function moveSouth(x, y) {
+  if (y - 2 < 1) return;
+  let mv = [];
+  if (!(x - 1 < 1)) {
+    mv.push([x - 1, y - 2]);
+  }
+  if (!(x + 1 > 8)) {
+    mv.push([x + 1, y - 2]);
+  }
+  return mv;
+}
+
+function moveWest(x, y) {
+  if (x - 2 < 1) return;
+  let mv = [];
+  if (!(y + 1 > 8)) {
+    mv.push([x - 2, y + 1]);
+  }
+  if (!(y - 1 < 1)) {
+    mv.push([x - 2, y - 1]);
+  }
+  return mv;
+}
+
+/***/ }),
+
+/***/ "./src/node.js":
+/*!*********************!*\
+  !*** ./src/node.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Node": () => (/* binding */ Node)
+/* harmony export */ });
+/* harmony import */ var _moves__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./moves */ "./src/moves.js");
+
+
+function Node(coords) {
+  let x = coords[0]
+  let y = coords[1]
+  let moves = (0,_moves__WEBPACK_IMPORTED_MODULE_0__.movesFrom)(x, y)
+  return {
+    x,
+    y,
+    moves,
+    coords: [x, y],
+    coordString: `${x}-${y} `
+  };
+}
+
+/***/ }),
+
+/***/ "./src/assets/flagpole.svg":
+/*!*********************************!*\
+  !*** ./src/assets/flagpole.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "flagpole.svg";
 
 /***/ }),
 
@@ -715,14 +961,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _board__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./board */ "./src/board.js");
 /* harmony import */ var _knight__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./knight */ "./src/knight.js");
+/* harmony import */ var _node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node */ "./src/node.js");
+/* harmony import */ var _knightpath__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./knightpath */ "./src/knightpath.js");
 
 
 
 
-(0,_board__WEBPACK_IMPORTED_MODULE_1__.board)()
-;(0,_knight__WEBPACK_IMPORTED_MODULE_2__.knight)()
+
+
+
+
+
+
+
+
+
+
+
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea310c135958303dd5d3f.js.map
+//# sourceMappingURL=bundle70e58c9bf30ef8335bfa.js.map
