@@ -74,10 +74,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.2rem;
 }
 
 .square.colored{
   background-color: $primary-color;
+  color: #f4f4f4;
 }
 
 .knight{

@@ -2,16 +2,20 @@ import knightSVG from "./assets/knight.svg";
 import flagpole from "./assets/flagpole.svg";
 import { clearOutput } from "./displayoutput";
 import { moveSound, flagSound } from "./sounds";
+import { clearSqaureNumbering } from "./animateknight";
 
 //place the knight on the board, make it draggable and allow target square selection
-export function knight(coords) {
-  let target = document.querySelector(`[data-coords="${coords}"]`);
+export function knight(element) {
+  if (document.querySelector(".knight")) {
+    document.querySelector(".knight").remove()
+  }
   let knight = knightImg();
-  target.appendChild(knight);
+  element.appendChild(knight);
   draggableKnight(knight);
   targetsClickable();
 }
-knight("4-5");
+let defaultStart = document.querySelector('[data-coords="4-5"]');
+knight(defaultStart);
 
 export function currentPosition() {
   let knight = document.querySelector(".knight");
@@ -47,12 +51,12 @@ function startDragging() {
 }
 
 function dropKnight() {
-  document.querySelector(".knight").remove();
   document.getElementById("knightcheck").classList.add("checked-green");
   let coords = this.getAttribute("data-coords");
   clearOutput();
+  clearSqaureNumbering()
   moveSound.play();
-  knight(coords);
+  knight(this);
   document.body.style.cursor = "pointer";
   let otherSquares = emptySquares();
   otherSquares.forEach((square) => {
@@ -74,6 +78,7 @@ function setTargetSquare() {
   this.appendChild(flag);
   flagSound.play()
   clearOutput();
+  clearSqaureNumbering();
   document.getElementById("flagcheck").classList.add("checked-red");
   boardSet();
 }
