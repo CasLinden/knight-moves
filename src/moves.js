@@ -6,7 +6,7 @@ export function movesFrom(x, y) {
   movesArray = movesArray.concat(moveWest(x, y))
   return movesArray.filter(value => value !== undefined)
 }
-
+// this module could be way shorter, just add and subract 1 and 2 and remove any arrays containing a value < 1 || > 9 
 function moveNorth(x, y) {
   if (y + 2 > 8) return;
   let mv = [];

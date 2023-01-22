@@ -1,8 +1,6 @@
 import { Node } from "./node";
-import { currentPosition, currentTarget } from "./knight";
 
-let start = Node([4, 5]);
-let finish = [8, 6];
+
 
 export function knightPath(root, target) {
   let queue = [root];

@@ -3,7 +3,6 @@ export function chessNotation(coords) {
   string += getLetter(coords[0]);
   string += coords[1];
   string += " "
-  console.log(string)
   return string;
 }
 

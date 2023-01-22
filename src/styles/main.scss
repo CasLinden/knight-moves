@@ -4,6 +4,7 @@ $primary-color: #38332b;
 $secondary-color: #f4f4f4;
 $third-color: #3C663E;
 $fourth-color: #B2EDA6;
+$fifth-color: #BF515A;
 
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 
@@ -113,8 +114,13 @@ h1{
   width: 1.4rem;
 }
 
-.checked{
-  background-image: url('../assets/checkmark.svg');
+.checked-green{
+  background-image: url('../assets/checkmark-green.svg');
+  background-size: contain;
+}
+
+.checked-red{
+  background-image: url('../assets/checkmark-red.svg');
   background-size: contain;
 }
 
@@ -135,6 +141,16 @@ h1{
 
 .output{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: .5rem;
+}
+
+.output-tile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  background: #3C663E;
+  border-radius: 5px;
+  padding: 1rem;
 }

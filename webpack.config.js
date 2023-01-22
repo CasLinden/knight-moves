@@ -49,6 +49,10 @@ module.exports = {
         test: /\.xml$/i,
         use: ["xml-loader"],
       },
+      {
+        test: /\.(mp3|ogg|wav)$/,
+        use: "file-loader",
+      },
     ],
   },
   plugins: [
