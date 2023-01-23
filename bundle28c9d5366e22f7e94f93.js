@@ -3890,15 +3890,18 @@ function emptySquares() {
 
 function draggableKnight(img) {
   img.addEventListener("pointerdown", startDragging, { once: true });
+  img.addEventListener("touchstart", startDragging, { once: true });
+  
 }
 
 function startDragging() {
   document.body.style.cursor = "grabbing";
   document.getElementById("knightcheck").classList.remove("checked-green");
   let otherSquares = emptySquares();
-  otherSquares.forEach((square) =>
+  otherSquares.forEach((square) => {
     square.addEventListener("pointerup", dropKnight)
-  );
+    square.addEventListener("touchend", dropKnight)
+  });
 }
 
 function dropKnight() {
@@ -3912,6 +3915,7 @@ function dropKnight() {
   let otherSquares = emptySquares();
   otherSquares.forEach((square) => {
     square.removeEventListener("pointerup", dropKnight);
+    square.removeEventListener("touchend", dropKnight);
   });
 }
 
@@ -4628,4 +4632,4 @@ function execute() {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle54059763fabb7fe4049a.js.map
+//# sourceMappingURL=bundle28c9d5366e22f7e94f93.js.map
