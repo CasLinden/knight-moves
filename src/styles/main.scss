@@ -24,6 +24,10 @@ body {
   gap: 1rem;
 }
 
+body.dragging-knight{
+  cursor: url('../assets/knight.svg'), auto;
+}
+
 #board-wrapper {
   width: 100%;
   max-width: 700px;

@@ -22,14 +22,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/checkmark-green.svg */ "./src/assets/checkmark-green.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/checkmark-red.svg */ "./src/assets/checkmark-red.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/knight.svg */ "./src/assets/knight.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/checkmark-green.svg */ "./src/assets/checkmark-green.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/checkmark-red.svg */ "./src/assets/checkmark-red.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel {\n  display: flex;\n  flex-direction: column;\n  gap: 0.7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: 0.3rem;\n  display: flex;\n  gap: 0.3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid #38332b;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: #3C663E;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: 0.8rem;\n}\n\n@media (min-width: 756px) {\n  body {\n    flex-direction: row;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,cAAA;AARF;;AAWA;EACE,yBAfgB;EAgBhB,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,SAAA;AARF;;AAWA;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,0DACE;EAGF,+BAAA;EACA,4BAAA;EACA,kBAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;;EAEE,iBAAA;EACA,cAxDc;AA6ChB;;AAcA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,yBA3Ec;EA4Ed,cAAA;AAXF;;AAcA;EACE,mBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,cAAA;EACA,aAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,kBAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,aAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAjIY;AAsHd;;AAcA;EACE,aAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;AAXF;;AAcA;EACE;IACE,mBAAA;EAXF;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$third-color: #3C663E;\n$fourth-color: #B2EDA6;\n$fifth-color: #BF515A;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: $secondary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas:\n    \"leftofboard board\"\n    \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square {\n  border: 1px solid $primary-color;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: $primary-color;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel{\n  display: flex;\n  flex-direction: column;\n  gap: .7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: .3rem;\n  display: flex;\n  gap: .3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid $primary-color;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url('../assets/checkmark-green.svg');\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url('../assets/checkmark-red.svg');\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: $third-color;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: .5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: .8rem;\n}\n\n@media (min-width: 756px) {\n  body{\n    flex-direction: row;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\nbody.dragging-knight {\n  cursor: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "), auto;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel {\n  display: flex;\n  flex-direction: column;\n  gap: 0.7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: 0.3rem;\n  display: flex;\n  gap: 0.3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid #38332b;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: #3C663E;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: 0.8rem;\n}\n\n@media (min-width: 756px) {\n  body {\n    flex-direction: row;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,cAAA;AARF;;AAWA;EACE,yBAfgB;EAgBhB,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,SAAA;AARF;;AAWA;EACE,qDAAA;AARF;;AAWA;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,0DACE;EAGF,+BAAA;EACA,4BAAA;EACA,kBAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;;EAEE,iBAAA;EACA,cA5Dc;AAiDhB;;AAcA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,yBA/Ec;EAgFd,cAAA;AAXF;;AAcA;EACE,mBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,cAAA;EACA,aAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,kBAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,aAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBArIY;AA0Hd;;AAcA;EACE,aAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;AAXF;;AAcA;EACE;IACE,mBAAA;EAXF;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$third-color: #3C663E;\n$fourth-color: #B2EDA6;\n$fifth-color: #BF515A;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: $secondary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\nbody.dragging-knight{\n  cursor: url('../assets/knight.svg'), auto;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas:\n    \"leftofboard board\"\n    \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square {\n  border: 1px solid $primary-color;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: $primary-color;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel{\n  display: flex;\n  flex-direction: column;\n  gap: .7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: .3rem;\n  display: flex;\n  gap: .3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid $primary-color;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url('../assets/checkmark-green.svg');\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url('../assets/checkmark-red.svg');\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: $third-color;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: .5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: .8rem;\n}\n\n@media (min-width: 756px) {\n  body{\n    flex-direction: row;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3878,7 +3880,7 @@ function knight(DOMElement) {
   }
   let knight = knightImg();
   DOMElement.appendChild(knight);
-  draggableKnight(knight);
+  moveableKnight(knight);
   targetsClickable();
 }
 let defaultStart = document.querySelector('[data-coords="4-5"]');
@@ -3888,36 +3890,43 @@ function emptySquares() {
   return Array.from(document.querySelectorAll(".square:not(:has(img))"));
 }
 
-function draggableKnight(img) {
-  img.addEventListener("pointerdown", startDragging, { once: true });
-  img.addEventListener("touchstart", startDragging, { once: true });
-  
+function allSquares() {
+  return Array.from(document.querySelectorAll(".square"));
 }
 
-function startDragging() {
-  document.body.style.cursor = "grabbing";
+function moveableKnight(img) {
+  img.addEventListener("click", startMoving, { once: true });
+}
+
+function startMoving() {
+  document.querySelector('body').classList.add("dragging-knight")
   document.getElementById("knightcheck").classList.remove("checked-green");
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.addEventListener("pointerup", dropKnight)
-    square.addEventListener("touchend", dropKnight)
+  document.querySelector('.knight-condition').textContent = "Click to drop the knight"
+  let squares = emptySquares();
+  squares.forEach((square) => {
+    square.addEventListener("click", dropKnight)
+    square.removeEventListener("click", setTargetSquare)
   });
 }
 
 function dropKnight() {
   document.getElementById("knightcheck").classList.add("checked-green");
   let coords = this.getAttribute("data-coords");
-  (0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
+  console.log('Iran')
+  console.log(this)
+  ;(0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
   (0,_animateknight__WEBPACK_IMPORTED_MODULE_4__.clearSqaureNumbering)();
   _sounds__WEBPACK_IMPORTED_MODULE_3__.moveSound.play();
   knight(this);
-  document.body.style.cursor = "pointer";
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.removeEventListener("pointerup", dropKnight);
-    square.removeEventListener("touchend", dropKnight);
+  document.querySelector("body").classList.remove("dragging-knight");
+  document.querySelector(".knight-condition").textContent =
+    "Click the knight to move it";
+  let squares = allSquares();
+  squares.forEach((square) => {
+    square.removeEventListener("click", dropKnight);
   });
 }
+
 
 function targetsClickable() {
   let otherSquares = emptySquares();
@@ -4632,4 +4641,4 @@ function execute() {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle28c9d5366e22f7e94f93.js.map
+//# sourceMappingURL=bundle3c477e4cc3674f321418.js.map

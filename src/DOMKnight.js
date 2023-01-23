@@ -11,7 +11,7 @@ export function knight(DOMElement) {
   }
   let knight = knightImg();
   DOMElement.appendChild(knight);
-  draggableKnight(knight);
+  moveableKnight(knight);
   targetsClickable();
 }
 let defaultStart = document.querySelector('[data-coords="4-5"]');
@@ -21,36 +21,43 @@ function emptySquares() {
   return Array.from(document.querySelectorAll(".square:not(:has(img))"));
 }
 
-function draggableKnight(img) {
-  img.addEventListener("pointerdown", startDragging, { once: true });
-  img.addEventListener("touchstart", startDragging, { once: true });
-  
+function allSquares() {
+  return Array.from(document.querySelectorAll(".square"));
 }
 
-function startDragging() {
-  document.body.style.cursor = "grabbing";
+function moveableKnight(img) {
+  img.addEventListener("click", startMoving, { once: true });
+}
+
+function startMoving() {
+  document.querySelector('body').classList.add("dragging-knight")
   document.getElementById("knightcheck").classList.remove("checked-green");
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.addEventListener("pointerup", dropKnight)
-    square.addEventListener("touchend", dropKnight)
+  document.querySelector('.knight-condition').textContent = "Click to drop the knight"
+  let squares = emptySquares();
+  squares.forEach((square) => {
+    square.addEventListener("click", dropKnight)
+    square.removeEventListener("click", setTargetSquare)
   });
 }
 
 function dropKnight() {
   document.getElementById("knightcheck").classList.add("checked-green");
   let coords = this.getAttribute("data-coords");
+  console.log('Iran')
+  console.log(this)
   clearOutput();
   clearSqaureNumbering();
   moveSound.play();
   knight(this);
-  document.body.style.cursor = "pointer";
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.removeEventListener("pointerup", dropKnight);
-    square.removeEventListener("touchend", dropKnight);
+  document.querySelector("body").classList.remove("dragging-knight");
+  document.querySelector(".knight-condition").textContent =
+    "Click the knight to move it";
+  let squares = allSquares();
+  squares.forEach((square) => {
+    square.removeEventListener("click", dropKnight);
   });
 }
+
 
 function targetsClickable() {
   let otherSquares = emptySquares();
