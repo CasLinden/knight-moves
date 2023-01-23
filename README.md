@@ -5,5 +5,6 @@ It consist of HTML, CSCC and JavaScript 100% written by Cas Linden, to cement hi
 It has an intuitive user interface, clear animations and works well on mobile devices. 
 At the time of completion he felt rather proud of his ability to throw such an application together all by himself. 
 
-Check out a live version at: caslinden.github.io/knight-moves
+Check out a live version at: 
 
+<a href="https://caslinden.github.io/knight-moves">GitHub Pages</a>
