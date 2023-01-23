@@ -29,7 +29,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n}\n\n#page-wrapper {\n  display: flex;\n  gap: 1rem;\n  margin: 20px;\n}\n\n#board-wrapper {\n  height: 600px;\n  width: 600px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.2rem;\n}\n\n.square.colored {\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel {\n  display: flex;\n  flex-direction: column;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nh1 {\n  margin: 1rem;\n}\n\n.condition {\n  margin: 0.3rem;\n  display: flex;\n  gap: 0.3rem;\n  align-items: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid #38332b;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: contain;\n}\n\n#traverse-button {\n  margin: 2rem;\n  padding: 1rem;\n  width: 50%;\n  font-size: 1.7rem;\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n#traverse-button.set {\n  background-color: #3C663E;\n}\n\n.output {\n  display: flex;\n  justify-content: center;\n  gap: 0.5rem;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,cAAA;AARF;;AAWA;EACI,yBAfc;EAgBd,iCAAA;AARJ;;AAWA;EACE,aAAA;EACA,SAAA;EACA,YAAA;AARF;;AAWA;EACE,aAAA;EACA,YAAA;EACA,aAAA;EACA,0DACA;EAGA,+BAAA;EACA,4BAAA;EACA,kBAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;;EAEE,iBAAA;EACA,cA1Dc;AA+ChB;;AAcA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBA9Ec;EA+Ed,cAAA;AAXF;;AAcA;EACE,mBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,YAAA;AAXF;;AAcA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,mBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,cAAA;EACA,aAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,YAAA;EACA,aAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;AAXF;;AAcA;EACE,yBAxIY;AA6Hd;;AAcA;EACE,aAAA;EACA,uBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;AAXF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$third-color: #3C663E;\n$fourth-color: #B2EDA6;\n$fifth-color: #BF515A;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n    background-color: $secondary-color;\n    font-family: 'Roboto', sans-serif;\n}\n\n#page-wrapper{\n  display: flex;\n  gap: 1rem;\n  margin:20px;\n}\n\n#board-wrapper{\n  height: 600px;\n  width: 600px;\n  display: grid;\n  grid-template-areas: \n  \"leftofboard board\"\n  \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter{\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container{\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square{\n  border: 1px solid $primary-color;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.2rem;\n}\n\n.square.colored{\n  background-color: $primary-color;\n  color: #f4f4f4;\n}\n\n.knight{\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel{\n  display: flex;\n  flex-direction: column;\n}\n\n.centerer{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nh1{\n  margin: 1rem;\n}\n\n.condition{\n  margin: .3rem;\n  display: flex;\n  gap: .3rem;\n  align-items: center;\n  font-size: 1.1rem;\n}\n\n.checkbox{\n  border: 1px solid $primary-color;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green{\n  background-image: url('../assets/checkmark-green.svg');\n  background-size: contain;\n}\n\n.checked-red{\n  background-image: url('../assets/checkmark-red.svg');\n  background-size: contain;\n}\n\n#traverse-button{\n  margin: 2rem;\n  padding: 1rem;\n  width: 50%;\n  font-size: 1.7rem;\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n#traverse-button.set{\n  background-color: $third-color;\n}\n\n.output{\n  display: flex;\n  justify-content: center;\n  gap: .5rem;\n}\n\n.output-tile{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: 1rem;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: #f4f4f4;\n  font-family: \"Roboto\", sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas: \"leftofboard board\" \". bottomofboard\";\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: #38332b;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid #38332b;\n}\n\n.square {\n  border: 1px solid #38332b;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: #38332b;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel {\n  display: flex;\n  flex-direction: column;\n  gap: 0.7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: 0.3rem;\n  display: flex;\n  gap: 0.3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid #38332b;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: #3C663E;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: 0.8rem;\n}\n\n@media (min-width: 756px) {\n  body {\n    flex-direction: row;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,cAAA;AARF;;AAWA;EACE,yBAfgB;EAgBhB,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,SAAA;AARF;;AAWA;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,0DACE;EAGF,+BAAA;EACA,4BAAA;EACA,kBAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,kCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;EACE,aAAA;EACA,wBAAA;EACA,qCAAA;EACA,mBAAA;EACA,qBAAA;AAXF;;AAcA;;EAEE,iBAAA;EACA,cAxDc;AA6ChB;;AAcA;EACE,aAAA;EACA,gBAAA;EACA,qCAAA;EACA,kCAAA;EACA,yBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,yBA3Ec;EA4Ed,cAAA;AAXF;;AAcA;EACE,mBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;AAXF;;AAcA;EACE,cAAA;EACA,aAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAAA;EACA,cAAA;EACA,aAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,yDAAA;EACA,wBAAA;AAXF;;AAcA;EACE,kBAAA;EACA,YAAA;EACA,yBAAA;EACA,cAAA;EACA,aAAA;EACA,iBAAA;AAXF;;AAcA;EACE,yBAjIY;AAsHd;;AAcA;EACE,aAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;AAXF;;AAcA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;AAXF;;AAcA;EACE;IACE,mBAAA;EAXF;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #38332b;\n$secondary-color: #f4f4f4;\n$third-color: #3C663E;\n$fourth-color: #B2EDA6;\n$fifth-color: #BF515A;\n\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: #38332b;\n}\n\nbody {\n  background-color: $secondary-color;\n  font-family: 'Roboto', sans-serif;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  gap: 1rem;\n}\n\n#board-wrapper {\n  width: 100%;\n  max-width: 700px;\n  display: grid;\n  grid-template-areas:\n    \"leftofboard board\"\n    \". bottomofboard\";\n\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 10fr 1fr;\n  margin-right: 10px;\n}\n\n#leftofboard {\n  display: grid;\n  grid-area: leftofboard;\n  grid-template-rows: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n#bottomofboard {\n  display: grid;\n  grid-area: bottomofboard;\n  grid-template-columns: repeat(8, 1fr);\n  align-items: center;\n  justify-items: center;\n}\n\n.rownumber,\n.columnletter {\n  font-size: 1.3rem;\n  color: $primary-color;\n}\n\n#board-container {\n  display: grid;\n  grid-area: board;\n  grid-template-columns: repeat(8, 1fr);\n  grid-template-rows: repeat(8, 1fr);\n  border: 1px solid $primary-color;\n}\n\n.square {\n  border: 1px solid $primary-color;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.square.colored {\n  background-color: $primary-color;\n  color: #f4f4f4;\n}\n\n.knight {\n  object-fit: contain;\n  width: 100%;\n}\n\n#side-panel{\n  display: flex;\n  flex-direction: column;\n  gap: .7rem;\n}\n\n.centerer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.condition {\n  margin: .3rem;\n  display: flex;\n  gap: .3rem;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.1rem;\n}\n\n.checkbox {\n  border: 1px solid $primary-color;\n  height: 1.4rem;\n  width: 1.4rem;\n}\n\n.checked-green {\n  background-image: url('../assets/checkmark-green.svg');\n  background-size: contain;\n}\n\n.checked-red {\n  background-image: url('../assets/checkmark-red.svg');\n  background-size: contain;\n}\n\n#traverse-button {\n  border-radius: 5px;\n  border: none;\n  background-color: #38332b;\n  color: #f4f4f4;\n  padding: 1rem;\n  font-size: 1.5rem;\n}\n\n#traverse-button.set {\n  background-color: $third-color;\n}\n\n.output {\n  display: flex;\n  flex-wrap: wrap;\n  gap: .5rem;\n  max-width: 260px;\n}\n\n.output-tile {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #f4f4f4;\n  background: #3C663E;\n  border-radius: 5px;\n  padding: .8rem;\n}\n\n@media (min-width: 756px) {\n  body{\n    flex-direction: row;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3846,6 +3846,140 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/DOMKnight.js":
+/*!**************************!*\
+  !*** ./src/DOMKnight.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "boardSet": () => (/* binding */ boardSet),
+/* harmony export */   "currentFLagPosition": () => (/* binding */ currentFLagPosition),
+/* harmony export */   "currentKnightPosition": () => (/* binding */ currentKnightPosition),
+/* harmony export */   "knight": () => (/* binding */ knight)
+/* harmony export */ });
+/* harmony import */ var _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/knight.svg */ "./src/assets/knight.svg");
+/* harmony import */ var _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/flagpole.svg */ "./src/assets/flagpole.svg");
+/* harmony import */ var _displayoutput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayoutput */ "./src/displayoutput.js");
+/* harmony import */ var _sounds__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sounds */ "./src/sounds.js");
+/* harmony import */ var _animateknight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./animateknight */ "./src/animateknight.js");
+
+
+
+
+
+
+//place the knight on the board, make it draggable and allow target square selection
+function knight(DOMElement) {
+  if (document.querySelector(".knight")) {
+    document.querySelector(".knight").remove();
+  }
+  let knight = knightImg();
+  DOMElement.appendChild(knight);
+  draggableKnight(knight);
+  targetsClickable();
+}
+let defaultStart = document.querySelector('[data-coords="4-5"]');
+knight(defaultStart);
+
+function emptySquares() {
+  return Array.from(document.querySelectorAll(".square:not(:has(img))"));
+}
+
+function draggableKnight(img) {
+  img.addEventListener("pointerdown", startDragging, { once: true });
+}
+
+function startDragging() {
+  document.body.style.cursor = "grabbing";
+  document.getElementById("knightcheck").classList.remove("checked-green");
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) =>
+    square.addEventListener("pointerup", dropKnight)
+  );
+}
+
+function dropKnight() {
+  document.getElementById("knightcheck").classList.add("checked-green");
+  let coords = this.getAttribute("data-coords");
+  (0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
+  (0,_animateknight__WEBPACK_IMPORTED_MODULE_4__.clearSqaureNumbering)();
+  _sounds__WEBPACK_IMPORTED_MODULE_3__.moveSound.play();
+  knight(this);
+  document.body.style.cursor = "pointer";
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) => {
+    square.removeEventListener("pointerup", dropKnight);
+  });
+}
+
+function targetsClickable() {
+  let otherSquares = emptySquares();
+  otherSquares.forEach((square) => {
+    square.addEventListener("click", setTargetSquare);
+  });
+}
+
+function setTargetSquare() {
+  let oldFlag = document.querySelector(".flagpole");
+  if (oldFlag) oldFlag.remove();
+  let flag = flagpoleImg();
+  this.appendChild(flag);
+  _sounds__WEBPACK_IMPORTED_MODULE_3__.flagSound.play();
+  (0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
+  (0,_animateknight__WEBPACK_IMPORTED_MODULE_4__.clearSqaureNumbering)();
+  document.getElementById("flagcheck").classList.add("checked-red");
+  boardSet();
+}
+
+function knightImg() {
+  let img = document.createElement("img");
+  img.src = _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__;
+  img.classList.add("knight");
+  img.setAttribute("draggable", "false");
+  return img;
+}
+
+function flagpoleImg() {
+  let img = document.createElement("img");
+  img.src = _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__;
+  img.classList.add("flagpole");
+  img.setAttribute("draggable", "false");
+  return img;
+}
+
+function boardSet() {
+  if (
+    document.querySelector(".knight") &&
+    document.querySelector(".flagpole")
+  ) {
+    document.getElementById("traverse-button").classList.add("set");
+  } else {
+    document.getElementById("traverse-button").classList.remove("set");
+  }
+}
+
+function currentKnightPosition() {
+  let knight = document.querySelector(".knight");
+  let position = knight.parentElement;
+  let x = +position.getAttribute("data-x");
+  let y = +position.getAttribute("data-y");
+  return [x, y];
+}
+
+function currentFLagPosition() {
+  let flagpole = document.querySelector(".flagpole");
+  let position = flagpole.parentElement;
+  let x = +position.getAttribute("data-x");
+  let y = +position.getAttribute("data-y");
+  return [x, y];
+}
+
+
+/***/ }),
+
 /***/ "./src/animateknight.js":
 /*!******************************!*\
   !*** ./src/animateknight.js ***!
@@ -3859,51 +3993,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "clearSqaureNumbering": () => (/* binding */ clearSqaureNumbering)
 /* harmony export */ });
 /* harmony import */ var _sounds__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sounds */ "./src/sounds.js");
-/* harmony import */ var _knight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./knight */ "./src/knight.js");
+/* harmony import */ var _DOMKnight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DOMKnight */ "./src/DOMKnight.js");
 
 
 
+
+// Called in index, with array (path) output by knightPath function
+// This animateknight module moves around the knight and plays some sounds
 
 function animateKnight(path) {
-  clearSqaureNumbering()
-  markStart(path.shift())
+  let cutOffStart = path.shift();
+  markStart(cutOffStart);
   for (let i = 0; i < path.length; i++) {
     setTimeout(() => {
-      toSquare(path[i])
+      toSquare(path[i]);
     }, 800 * i);
     if (i < path.length - 1) {
       setTimeout(() => {
         numberSquare(path[i], i);
-      }, (800 * i) + 700);
+      }, 800 * i + 700);
     }
   }
 }
 
 function toSquare(coords) {
-  let target = elementFrom(coords)
-  playSoundAndRemoveFlag(target)
-  ;(0,_knight__WEBPACK_IMPORTED_MODULE_1__.knight)(target)
+  let target = elementFrom(coords);
+  playSoundAndRemoveFlag(target);
+  (0,_DOMKnight__WEBPACK_IMPORTED_MODULE_1__.knight)(target);
 }
 
 function markStart(coords) {
-  let start = elementFrom(coords)
-  start.textContent = 'start'
+  let start = elementFrom(coords);
+  start.textContent = "start";
 }
 
 function numberSquare(coords, i) {
-  let target = elementFrom(coords)
-  target.textContent = `${i+1}`
+  let target = elementFrom(coords);
+  target.textContent = `${i + 1}`;
 }
 
 function playSoundAndRemoveFlag(element) {
-  let flag = element.querySelector(".flagpole") 
+  let flag = element.querySelector(".flagpole");
   if (flag) {
-     _sounds__WEBPACK_IMPORTED_MODULE_0__.flagSound.play()
-     flag.remove()
-     document.getElementById('flagcheck').classList.remove("checked-red")
-   } else {
-     _sounds__WEBPACK_IMPORTED_MODULE_0__.moveSound.play()
-   }
+    _sounds__WEBPACK_IMPORTED_MODULE_0__.flagSound.play();
+    flag.remove();
+    document.getElementById("flagcheck").classList.remove("checked-red");
+    (0,_DOMKnight__WEBPACK_IMPORTED_MODULE_1__.boardSet)();
+  } else {
+    _sounds__WEBPACK_IMPORTED_MODULE_0__.moveSound.play();
+  }
 }
 
 function elementFrom(coords) {
@@ -3912,11 +4050,14 @@ function elementFrom(coords) {
 }
 
 function clearSqaureNumbering() {
-  const squares = Array.from( document.querySelectorAll(".square:not(:has(img))"));
-  squares.forEach(square => {
-    square.textContent = ""
-  })
+  const squares = Array.from(
+    document.querySelectorAll(".square:not(:has(img))")
+  );
+  squares.forEach((square) => {
+    square.textContent = "";
+  });
 }
+
 
 /***/ }),
 
@@ -4061,139 +4202,6 @@ function makeSpan(coords) {
 
 /***/ }),
 
-/***/ "./src/knight.js":
-/*!***********************!*\
-  !*** ./src/knight.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "currentPosition": () => (/* binding */ currentPosition),
-/* harmony export */   "currentTarget": () => (/* binding */ currentTarget),
-/* harmony export */   "knight": () => (/* binding */ knight)
-/* harmony export */ });
-/* harmony import */ var _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/knight.svg */ "./src/assets/knight.svg");
-/* harmony import */ var _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/flagpole.svg */ "./src/assets/flagpole.svg");
-/* harmony import */ var _displayoutput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayoutput */ "./src/displayoutput.js");
-/* harmony import */ var _sounds__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sounds */ "./src/sounds.js");
-/* harmony import */ var _animateknight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./animateknight */ "./src/animateknight.js");
-
-
-
-
-
-
-//place the knight on the board, make it draggable and allow target square selection
-function knight(element) {
-  if (document.querySelector(".knight")) {
-    document.querySelector(".knight").remove()
-  }
-  let knight = knightImg();
-  element.appendChild(knight);
-  draggableKnight(knight);
-  targetsClickable();
-}
-let defaultStart = document.querySelector('[data-coords="4-5"]');
-knight(defaultStart);
-
-function currentPosition() {
-  let knight = document.querySelector(".knight");
-  let position = knight.parentElement;
-  let x = +position.getAttribute("data-x");
-  let y = +position.getAttribute("data-y");
-  return [x, y];
-}
-
-function currentTarget() {
-  let flagpole = document.querySelector(".flagpole");
-  let position = flagpole.parentElement;
-  let x = +position.getAttribute("data-x");
-  let y = +position.getAttribute("data-y");
-  return [x, y];
-}
-
-function emptySquares() {
-  return Array.from(document.querySelectorAll(".square:not(:has(img))"));
-}
-
-function draggableKnight(img) {
-  img.addEventListener("mousedown", startDragging, { once: true });
-}
-
-function startDragging() {
-  document.body.style.cursor = "grabbing";
-  document.getElementById("knightcheck").classList.remove("checked-green");
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) =>
-    square.addEventListener("mouseup", dropKnight)
-  );
-}
-
-function dropKnight() {
-  document.getElementById("knightcheck").classList.add("checked-green");
-  let coords = this.getAttribute("data-coords");
-  (0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
-  (0,_animateknight__WEBPACK_IMPORTED_MODULE_4__.clearSqaureNumbering)()
-  _sounds__WEBPACK_IMPORTED_MODULE_3__.moveSound.play();
-  knight(this);
-  document.body.style.cursor = "pointer";
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.removeEventListener("mouseup", dropKnight);
-  });
-}
-
-function targetsClickable() {
-  let otherSquares = emptySquares();
-  otherSquares.forEach((square) => {
-    square.addEventListener("click", setTargetSquare);
-  });
-}
-
-function setTargetSquare() {
-  let oldFlag = document.querySelector(".flagpole");
-  if (oldFlag) oldFlag.remove();
-  let flag = flagpoleImg();
-  this.appendChild(flag);
-  _sounds__WEBPACK_IMPORTED_MODULE_3__.flagSound.play()
-  ;(0,_displayoutput__WEBPACK_IMPORTED_MODULE_2__.clearOutput)();
-  (0,_animateknight__WEBPACK_IMPORTED_MODULE_4__.clearSqaureNumbering)();
-  document.getElementById("flagcheck").classList.add("checked-red");
-  boardSet();
-}
-
-function knightImg() {
-  let img = document.createElement("img");
-  img.src = _assets_knight_svg__WEBPACK_IMPORTED_MODULE_0__;
-  img.classList.add("knight");
-  img.setAttribute("draggable", "false");
-  return img;
-}
-
-function flagpoleImg() {
-  let img = document.createElement("img");
-  img.src = _assets_flagpole_svg__WEBPACK_IMPORTED_MODULE_1__;
-  img.classList.add("flagpole");
-  img.setAttribute("draggable", "false");
-  return img;
-}
-
-function boardSet() {
-  if (
-    document.querySelector(".knight") &&
-    document.querySelector(".flagpole")
-  ) {
-    document.getElementById("traverse-button").classList.add("set");
-  } else {
-    document.getElementById("traverse-button").classList.remove("set");
-  }
-}
-
-
-/***/ }),
-
 /***/ "./src/knightpath.js":
 /*!***************************!*\
   !*** ./src/knightpath.js ***!
@@ -4208,17 +4216,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node */ "./src/node.js");
 
 
-
-
-function knightPath(root, target) {
+// In this function:
+// The Node factory function is called for the start position with an array positions or "moves", 
+// Subsequent moves are also passed through factory "Node", creating a potentially endless data structure.
+// Subsequent moves are given a .prev, which is always the previous node or ""
+// Moves are evaluated 'breadth first', when isTarget() returns true, path() returns a chain of previous nodes
+function knightPath(start, target) {
+  let root = (0,_node__WEBPACK_IMPORTED_MODULE_0__.Node)(start)
   let queue = [root];
   enqueueMovesOf(root);
 
-  function enqueueMovesOf(root) {
-    let moves = root.moves;
+  function enqueueMovesOf(position) {
+    let moves = position.moves;
     let movesNodes = moves.map((move) => (0,_node__WEBPACK_IMPORTED_MODULE_0__.Node)(move));
     movesNodes.forEach((node) => {
-      node.prev = root;
+      node.prev = position;
       queue.push(node);
     });
   }
@@ -4263,6 +4275,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "movesFrom": () => (/* binding */ movesFrom)
 /* harmony export */ });
+// This function is used in the factory function Node
+// It gives each Node an array of possible moves from that position
+
 function movesFrom(x, y) {
   let movesArray = []
   movesArray = movesArray.concat(moveNorth(x, y))
@@ -4271,7 +4286,8 @@ function movesFrom(x, y) {
   movesArray = movesArray.concat(moveWest(x, y))
   return movesArray.filter(value => value !== undefined)
 }
-// this module could be way shorter, just add and subract 1 and 2 and remove any arrays containing a value < 1 || > 9 
+// This is the same as doing +1 -1 +2 -2 in 8 combinations and filtering anything <1 >9
+// I blush not to have thought of that but hey, this works too. 
 function moveNorth(x, y) {
   if (y + 2 > 8) return;
   let mv = [];
@@ -4336,6 +4352,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _moves__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./moves */ "./src/moves.js");
 
 
+// This function is called node, but could also have been called vertex
+// It is used to create a data structure to be traversed breadth-first, see knightpath module
 function Node(coords) {
   let x = +coords[0]
   let y = +coords[1]
@@ -4571,12 +4589,11 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _board__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./board */ "./src/board.js");
-/* harmony import */ var _knight__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./knight */ "./src/knight.js");
+/* harmony import */ var _DOMKnight__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DOMKnight */ "./src/DOMKnight.js");
 /* harmony import */ var _node__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node */ "./src/node.js");
 /* harmony import */ var _knightpath__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./knightpath */ "./src/knightpath.js");
 /* harmony import */ var _displayoutput__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./displayoutput */ "./src/displayoutput.js");
 /* harmony import */ var _animateknight__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./animateknight */ "./src/animateknight.js");
-
 
 
 
@@ -4600,16 +4617,15 @@ function ready(btn) {
 
 function execute() {
   if (!ready()) return;
-  let start = (0,_node__WEBPACK_IMPORTED_MODULE_3__.Node)((0,_knight__WEBPACK_IMPORTED_MODULE_2__.currentPosition)());
-  let end = (0,_knight__WEBPACK_IMPORTED_MODULE_2__.currentTarget)();
+  let start = (0,_DOMKnight__WEBPACK_IMPORTED_MODULE_2__.currentKnightPosition)();
+  let end = (0,_DOMKnight__WEBPACK_IMPORTED_MODULE_2__.currentFLagPosition)();
   let path = (0,_knightpath__WEBPACK_IMPORTED_MODULE_4__.knightPath)(start, end);
-  console.log(path)
-  ;(0,_displayoutput__WEBPACK_IMPORTED_MODULE_5__.displayPath)(path)
-  ;(0,_animateknight__WEBPACK_IMPORTED_MODULE_6__.animateKnight)(path)
+  (0,_displayoutput__WEBPACK_IMPORTED_MODULE_5__.displayPath)(path);
+  (0,_animateknight__WEBPACK_IMPORTED_MODULE_6__.animateKnight)(path);
 }
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle04cd3b844549043e40da.js.map
+//# sourceMappingURL=bundle54059763fabb7fe4049a.js.map

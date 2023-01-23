@@ -1,16 +1,20 @@
 import { Node } from "./node";
 
-
-
-export function knightPath(root, target) {
+// In this function:
+// The Node factory function is called for the start position with an array positions or "moves", 
+// Subsequent moves are also passed through factory "Node", creating a potentially endless data structure.
+// Subsequent moves are given a .prev, which is always the previous node or ""
+// Moves are evaluated 'breadth first', when isTarget() returns true, path() returns a chain of previous nodes
+export function knightPath(start, target) {
+  let root = Node(start)
   let queue = [root];
   enqueueMovesOf(root);
 
-  function enqueueMovesOf(root) {
-    let moves = root.moves;
+  function enqueueMovesOf(position) {
+    let moves = position.moves;
     let movesNodes = moves.map((move) => Node(move));
     movesNodes.forEach((node) => {
-      node.prev = root;
+      node.prev = position;
       queue.push(node);
     });
   }

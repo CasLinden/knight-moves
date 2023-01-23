@@ -16,23 +16,21 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    background-color: $secondary-color;
-    font-family: 'Roboto', sans-serif;
-}
-
-#page-wrapper{
+  background-color: $secondary-color;
+  font-family: 'Roboto', sans-serif;
   display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
   gap: 1rem;
-  margin:20px;
 }
 
-#board-wrapper{
-  height: 600px;
-  width: 600px;
+#board-wrapper {
+  width: 100%;
+  max-width: 700px;
   display: grid;
-  grid-template-areas: 
-  "leftofboard board"
-  ". bottomofboard";
+  grid-template-areas:
+    "leftofboard board"
+    ". bottomofboard";
 
   grid-template-columns: 1fr 10fr;
   grid-template-rows: 10fr 1fr;
@@ -56,12 +54,12 @@ body {
 }
 
 .rownumber,
-.columnletter{
+.columnletter {
   font-size: 1.3rem;
   color: $primary-color;
 }
 
-#board-container{
+#board-container {
   display: grid;
   grid-area: board;
   grid-template-columns: repeat(8, 1fr);
@@ -69,20 +67,19 @@ body {
   border: 1px solid $primary-color;
 }
 
-.square{
+.square {
   border: 1px solid $primary-color;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
 }
 
-.square.colored{
+.square.colored {
   background-color: $primary-color;
   color: #f4f4f4;
 }
 
-.knight{
+.knight {
   object-fit: contain;
   width: 100%;
 }
@@ -90,69 +87,72 @@ body {
 #side-panel{
   display: flex;
   flex-direction: column;
+  gap: .7rem;
 }
 
-.centerer{
+.centerer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h1{
-  margin: 1rem;
-}
-
-.condition{
+.condition {
   margin: .3rem;
   display: flex;
   gap: .3rem;
   align-items: center;
+  justify-content: center;
   font-size: 1.1rem;
 }
 
-.checkbox{
+.checkbox {
   border: 1px solid $primary-color;
   height: 1.4rem;
   width: 1.4rem;
 }
 
-.checked-green{
+.checked-green {
   background-image: url('../assets/checkmark-green.svg');
   background-size: contain;
 }
 
-.checked-red{
+.checked-red {
   background-image: url('../assets/checkmark-red.svg');
   background-size: contain;
 }
 
-#traverse-button{
-  margin: 2rem;
-  padding: 1rem;
-  width: 50%;
-  font-size: 1.7rem;
+#traverse-button {
   border-radius: 5px;
   border: none;
   background-color: #38332b;
   color: #f4f4f4;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
-#traverse-button.set{
+#traverse-button.set {
   background-color: $third-color;
 }
 
-.output{
+.output {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: .5rem;
+  max-width: 260px;
 }
 
-.output-tile{
+.output-tile {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #f4f4f4;
   background: #3C663E;
   border-radius: 5px;
-  padding: 1rem;
+  padding: .8rem;
+}
+
+@media (min-width: 756px) {
+  body{
+    flex-direction: row;
+  }
 }

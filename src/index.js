@@ -1,11 +1,10 @@
 import "./styles/main.scss";
 import { board } from "./board";
-import { currentPosition, currentTarget } from "./knight";
+import { currentKnightPosition, currentFLagPosition } from "./DOMKnight";
 import { Node } from "./node";
 import { knightPath } from "./knightpath";
 import { displayPath } from "./displayoutput";
 import { animateKnight } from "./animateknight";
-
 
 function armTraverseButton() {
   let btn = document.getElementById("traverse-button");
@@ -22,10 +21,9 @@ function ready(btn) {
 
 function execute() {
   if (!ready()) return;
-  let start = Node(currentPosition());
-  let end = currentTarget();
+  let start = currentKnightPosition();
+  let end = currentFLagPosition();
   let path = knightPath(start, end);
-  console.log(path)
-  displayPath(path)
-  animateKnight(path)
+  displayPath(path);
+  animateKnight(path);
 }

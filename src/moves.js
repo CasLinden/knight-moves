@@ -1,3 +1,6 @@
+// This function is used in the factory function Node
+// It gives each Node an array of possible moves from that position
+
 export function movesFrom(x, y) {
   let movesArray = []
   movesArray = movesArray.concat(moveNorth(x, y))
@@ -6,7 +9,8 @@ export function movesFrom(x, y) {
   movesArray = movesArray.concat(moveWest(x, y))
   return movesArray.filter(value => value !== undefined)
 }
-// this module could be way shorter, just add and subract 1 and 2 and remove any arrays containing a value < 1 || > 9 
+// This is the same as doing +1 -1 +2 -2 in 8 combinations and filtering anything <1 >9
+// I blush not to have thought of that but hey, this works too. 
 function moveNorth(x, y) {
   if (y + 2 > 8) return;
   let mv = [];

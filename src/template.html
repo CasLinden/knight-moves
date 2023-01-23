@@ -7,7 +7,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div id="page-wrapper">
         <div id="board-wrapper">
             <div id="leftofboard">
              <div class="rownumber">8</div>
@@ -32,20 +31,25 @@
             </div>
         </div>
         <div id="side-panel">
-          <div class="centerer">
-              <h1>Knight Moves</h1>
-          </div>
-          <div class="condition">
-              <p>Drag the knight to move it to a new starting square</p>
-              <div class="checkbox checked-green" id="knightcheck"></div>
-          </div>
-          <div class="condition">
-              <p>Click to set a target square</p>
-              <div class="checkbox" id="flagcheck"></div>
-          </div>
-          <div class="centerer"><button id="traverse-button">Traverse the board!</button></div>
-          <div class="output"></div>
+            <div class="centerer">
+                <h1>Knight Moves</h1>
+            </div>
+              <div id="conditions-wrapper">
+                  <div class="condition">
+                      <p>Drag the knight to a square</p>
+                      <div class="checkbox checked-green" id="knightcheck"></div>
+                  </div>
+                  <div class="condition">
+                      <p>Click to set the target square</p>
+                      <div class="checkbox" id="flagcheck"></div>
+                  </div>
+              </div>
+            <div class="centerer"><button id="traverse-button">Find quickest route!</button></div>
+            <div class="centerer">
+                <div class="output"></div>
+            </div>
+          
         </div>
-    </div>
+    
 </body>
 </html>
