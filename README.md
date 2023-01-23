@@ -6,5 +6,4 @@ It has an intuitive user interface, clear animations and works well on mobile de
 At the time of completion he felt rather proud of his ability to throw such an application together all by himself. 
 
 Check out a live version at: 
-
 <a href="https://caslinden.github.io/knight-moves">GitHub Pages</a>
